@@ -1,0 +1,9 @@
+{
+  "build": {
+    "builder": "NIXPACKS"
+  },
+  "deploy": {
+    "startCommand": "playwright install chromium && python scraper_despegar.py",
+    "restartPolicyType": "ON_FAILURE"
+  }
+}
