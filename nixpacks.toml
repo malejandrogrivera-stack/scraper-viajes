@@ -1,0 +1,8 @@
+[phases.setup]
+nixPkgs = ["python311"]
+
+[phases.install]
+cmds = ["pip3 install playwright beautifulsoup4 requests schedule && python3 -m playwright install chromium"]
+
+[start]
+cmd = "python3 scraper_v2.py"
