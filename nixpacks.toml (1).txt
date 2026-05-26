@@ -1,0 +1,8 @@
+[phases.setup]
+nixPkgs = ["python311", "chromium", "nss", "nspr", "atk", "cups", "dbus", "expat", "libdrm", "libxkbcommon", "mesa", "libGL"]
+
+[phases.install]
+cmds = ["pip install playwright beautifulsoup4 requests schedule && playwright install chromium"]
+
+[start]
+cmd = "python scraper_v2.py"
