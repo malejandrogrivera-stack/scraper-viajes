@@ -1,1 +1,1 @@
-worker: python scraper_v3.py 
+worker: python scraper_v3.py
